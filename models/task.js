@@ -10,7 +10,7 @@ const sequelize = new Sequelize(url,{    dialect: 'postgres',
             require: true,
             rejectUnauthorized: false // <<<<<< YOU NEED THIS
         }
-    })
+    }})
 
 let Task = sequelize.define("tasks", {
   name: Sequelize.STRING,
